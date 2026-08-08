@@ -1,15 +1,6 @@
-"""Minimal runnable example for projects created from this template."""
+"""PlainInfer 的最小命令行入口。"""
 
-
-def greeting() -> str:
-    """Return the example greeting."""
-    return "Hello, World!"
-
-
-def main() -> None:
-    """Run the example application."""
-    print(greeting())
-
+from plaininfer.inspection import main
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())
